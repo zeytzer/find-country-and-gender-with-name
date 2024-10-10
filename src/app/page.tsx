@@ -16,15 +16,15 @@ export default function Home() {
   };
 
   return (
-    <div className="font-sans select-none ">
+    <div className="font-sans select-none">
       <form
         onSubmit={handleSubmit}
-        className="flex items-center justify-center min-h-screen flex-col gap-10 sm:gap-20 p-4 "
+        className="flex items-center justify-center min-h-screen flex-col gap-10 sm:gap-20 p-4"
       >
         <input
           type="text"
           placeholder={isFocused ? "" : "Enter your name..."}
-          className="text-white text-center text-3xl sm:text-6xl w-full max-w-md sm:max-w-[800px] border-x-4 px-4 h-20 sm:h-32 border-white outline-none bg-black uppercase"
+          className="text-white text-center text-3xl sm:text-6xl w-full border-x-4 px-4 h-16 sm:h-24 border-white outline-none bg-black uppercase"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           onFocus={() => setIsFocused(true)}
@@ -32,7 +32,7 @@ export default function Home() {
         />
         <button
           type="submit"
-          className="text-center text-xl sm:text-2xl border-2 border-white p-4 h-16 w-48 sm:h-20 sm:w-60 rounded-2xl hover:bg-white hover:text-black"
+          className="text-center text-xl sm:text-2xl border-2 border-white p-4 h-16 w-48 sm:h-20 sm:w-60 rounded-2xl hover:bg-white hover:text-black fixed bottom-10"
         >
           Predict Data
         </button>
